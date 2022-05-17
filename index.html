@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <h2>Marius Stefan</h2>
+        </div>
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="#about-me">About Me</a></li>
+          <li class="navigation-item"><a href="#projects">Projects</a></li>
+          <li class="navigation-item"><a href="#skills">Skills</a></li>
+          <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="about-me" class="about-me shadow">
+        <h2 class="projects-heading">About Me</h2>
+        <div class="about-me-text-container column">
+          <p class="text-about-me">
+            Hi, I'm Marius Stefan, an Romanian moved in England from 2015. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="text-about-me">
+            I'm passionate about computers, space exploration. I like si-fi
+            movies, music, and all about cars.
+          </p>
+          <p class="text-about-me">
+            In my free time i like to travel, to cycle, to walk in nature ,
+            listening to music.
+          </p>
+          <div class="buttons">
+            <button
+              type="button"
+              onclick="document.getElementById('demo').innerHTML = Date()"
+            >
+              Click me to display Date and Time.
+            </button>
+            <p id="demo"></p>
+            <button
+              type="button"
+              onclick=" document.body.style.backgroundColor = 'green'"
+            >
+              Click me to change background color to green.
+            </button>
+            <button
+              type="button"
+              id="changeButton"
+              onclick="switchBackground()"
+            >
+              Click me to change background color.
+            </button>
+          </div>
+        </div>
+        <div>
+          <img class="portrait" src="mariusStefan.jpg" alt="A photo of me" />
+        </div>
+      </section>
+
+      <section id="projects" class="projects project--row">
+        <h2 class="projects-heading">Projects</h2>
+        <div class="project project--column">
+          <div class="project-title">
+            <h3 class="project-heading">
+              Stop watch screenshot, click on image to see source code github.
+            </h3>
+          </div>
+          <a
+            class="project-description"
+            href="https://github.com/mariusStefan30/stop-watch"
+          >
+            <img src="1.png" alt="stopwatch" class="project-image"
+          /></a>
+        </div>
+
+        <div class="project project--column">
+          <div class="project-title">
+            <h3 class="project-heading">
+              Quotes Generator screenshot, click on image to see source code
+              github.
+            </h3>
+          </div>
+          <a
+            class="project-description"
+            href="https://github.com/mariusStefan30/mixmsg"
+          >
+            <img src="2.png" alt="text-about-me" class="project-image"
+          /></a>
+        </div>
+
+        <div class="project project--column">
+          <div class="project-title">
+            <h3 class="project-heading">
+              The calculator app screenshot, click on image to see source code
+              github.
+            </h3>
+          </div>
+          <a
+            class="project-description"
+            href="https://github.com/mariusStefan30/javascript-calculator"
+          >
+            <img src="3.png" alt="calculator app" class="project-image" />
+          </a>
+        </div>
+
+        <div class="project project--column">
+          <div class="project-title">
+            <h3 class="project-heading">
+              The PERN Amazon clone and ToDo app screenshot, click on image to see source code
+              github.
+            </h3>
+          </div>
+          <a
+            class="project-description"
+            href="https://github.com/mariusStefan30/Pern-clone-amazon-and-toDo"
+          >
+            <img src="amazon-pern-clone-app.png" alt="calculator app" class="project-image" />
+          </a>
+        </div>
+
+        <div class="project project--column">
+          <div class="project-title">
+            <h3 class="project-heading">
+              The MERN Movie Rental app screenshot, click on image to see source code
+              github.
+            </h3>
+          </div>
+          <a
+            class="project-description"
+            href="https://github.com/mariusStefan30/Mern-app-movie-rent"
+          >
+            <img src="mern-app.png" alt="calculator app" class="project-image" />
+          </a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="projects-heading">Skills</h2>
+        <div id="skills-container">
+          <div class="skills-item">
+            <p>Html5 icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Css3 icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Javascript icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>React.js icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Node.js icon will follow</p>
+          </div>
+        </div>
+      </section>
+        <div id="skills-container">
+          <div class="skills-item">
+            <p>Bootstrap 4 icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Mongo db icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Postgre sql icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Express.js icon will follow</p>
+          </div>
+          <div class="skills-item">
+            <p>Redux.js icon will follow</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer--brand">
+      <img src="" alt="image brand" />
+      <p class="footer--copyright">Copyright 2022 Marius Stefan</p>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
